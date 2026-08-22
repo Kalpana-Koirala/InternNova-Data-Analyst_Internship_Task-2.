@@ -1,0 +1,26 @@
+StudentID,Name,Gender,Class,City,Math,Science,English,Attendance,Average
+1,Aarav Sharma,Male,10A,Delhi,78.0,82.0,75.0,92,78.0
+2,Priya Singh,Female,10A,Mumbai,88.0,91.0,85.0,95,88.0
+3,Rohan Verma,Male,10B,Delhi,65.0,70.0,60.0,78,65.0
+4,Sneha Patel,Female,10B,Bangalore,92.0,89.0,94.0,97,92.0
+5,Karan Mehta,Male,10A,Chennai,55.0,79.0,58.0,65,64.0
+6,Anjali Gupta,Female,10C,Mumbai,73.0,76.0,80.0,88,76.0
+7,Vikram Rao,Male,10B,Bangalore,72.0,68.0,62.0,72,67.0
+8,Neha Joshi,Female,10A,Delhi,81.0,85.0,79.0,90,82.0
+9,Arjun Nair,Male,10C,Chennai,45.0,50.0,48.0,60,48.0
+10,Divya Iyer,Female,10B,Mumbai,90.0,93.0,71.0,96,85.0
+11,Rahul Kapoor,Male,10A,Delhi,69.0,72.0,71.0,80,71.0
+12,Pooja Reddy,Female,10C,Bangalore,72.0,79.0,82.0,85,78.0
+13,Aditya Kumar,Male,10B,Chennai,58.0,61.0,55.0,68,58.0
+14,Meera Nambiar,Female,10A,Mumbai,95.0,97.0,96.0,99,96.0
+15,Sanjay Das,Male,10C,Delhi,62.0,79.0,59.0,74,67.0
+16,Kavya Menon,Female,10B,Bangalore,84.0,87.0,83.0,91,85.0
+17,Ishaan Chopra,Male,10A,Chennai,71.0,74.0,70.0,82,72.0
+18,Riya Bansal,Female,10C,Mumbai,72.0,88.0,90.0,93,83.0
+19,Manish Tiwari,Male,10B,Delhi,52.0,56.0,50.0,63,53.0
+20,Tanya Malhotra,Female,10A,Bangalore,89.0,90.0,88.0,94,89.0
+21,Yash Agarwal,Male,10C,Chennai,66.0,69.0,64.0,76,66.0
+22,Simran Kaur,Female,10B,Delhi,77.0,80.0,71.0,86,76.0
+23,Dev Choudhary,Male,10A,Mumbai,60.0,63.0,58.0,70,60.0
+24,Anika Sharma,Female,10C,Bangalore,93.0,95.0,91.0,98,93.0
+25,Nikhil Yadav,Male,10B,Chennai,48.0,52.0,45.0,58,48.0

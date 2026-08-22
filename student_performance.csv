@@ -1,0 +1,26 @@
+StudentID,Name,Gender,Class,City,Math,Science,English,Attendance
+1,Aarav Sharma,Male,10A,Delhi,78,82,75,92
+2,Priya Singh,Female,10A,Mumbai,88,91,85,95
+3,Rohan Verma,Male,10B,Delhi,65,70,60,78
+4,Sneha Patel,Female,10B,Bangalore,92,89,94,97
+5,Karan Mehta,Male,10A,Chennai,55,,58,65
+6,Anjali Gupta,Female,10C,Mumbai,73,76,80,88
+7,Vikram Rao,Male,10B,Bangalore,,68,62,72
+8,Neha Joshi,Female,10A,Delhi,81,85,79,90
+9,Arjun Nair,Male,10C,Chennai,45,50,48,60
+10,Divya Iyer,Female,10B,Mumbai,90,93,,96
+11,Rahul Kapoor,Male,10A,Delhi,69,72,71,80
+12,Pooja Reddy,Female,10C,Bangalore,,79,82,85
+13,Aditya Kumar,Male,10B,Chennai,58,61,55,68
+14,Meera Nambiar,Female,10A,Mumbai,95,97,96,99
+15,Sanjay Das,Male,10C,Delhi,62,,59,74
+16,Kavya Menon,Female,10B,Bangalore,84,87,83,91
+17,Ishaan Chopra,Male,10A,Chennai,71,74,70,82
+18,Riya Bansal,Female,10C,Mumbai,,88,90,93
+19,Manish Tiwari,Male,10B,Delhi,52,56,50,63
+20,Tanya Malhotra,Female,10A,Bangalore,89,90,88,94
+21,Yash Agarwal,Male,10C,Chennai,66,69,64,76
+22,Simran Kaur,Female,10B,Delhi,77,80,,86
+23,Dev Choudhary,Male,10A,Mumbai,60,63,58,70
+24,Anika Sharma,Female,10C,Bangalore,93,95,91,98
+25,Nikhil Yadav,Male,10B,Chennai,48,52,45,58

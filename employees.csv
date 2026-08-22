@@ -1,0 +1,21 @@
+EmpID,Name,Department,Age,Salary,JoiningDate,City,Rating
+101,Alice Johnson,HR,28.0,45000.0,2019-03-15,Delhi,4.2
+102,Bob Smith,IT,34.0,62000.0,2017-07-01,Mumbai,4.533333333333333
+103,Charlie Brown,IT,33.0,58000.0,2020-01-20,Bangalore,3.8
+104,David Lee,Finance,41.0,59500.0,2015-11-05,Delhi,4.5
+105,Eva Green,HR,26.0,47000.0,0,Chennai,4.0
+106,Frank White,IT,38.0,68000.0,2016-09-12,Delhi,3.9
+107,Grace Kim,Finance,45.0,82000.0,2014-02-28,Mumbai,4.7
+108,Helen Clark,HR,31.0,51000.0,2018-06-18,Bangalore,3.766666666666667
+109,Ian Wright,IT,33.0,71000.0,2013-04-09,Delhi,4.1
+110,Julia Davis,Finance,29.0,59500.0,2021-08-23,Chennai,3.6
+111,Kevin Moore,Sales,33.0,49000.0,2019-12-01,Mumbai,4.3
+112,Laura Hall,Sales,33.0,53000.0,2020-05-14,Delhi,3.7
+113,Mike Turner,IT,27.0,59500.0,2022-01-10,Bangalore,4.0
+114,Nina Patel,HR,36.0,56000.0,2016-03-22,Delhi,4.2
+115,Oscar King,Sales,40.0,64000.0,0,Chennai,4.4
+116,Priya Nair,Finance,33.0,79000.0,2015-10-30,Mumbai,4.6
+117,Quinn Baker,IT,32.0,59500.0,2018-09-17,Bangalore,3.5
+118,Rachel Adams,Sales,25.0,44000.0,2021-02-05,Delhi,4.2
+119,Sam Wilson,HR,33.0,50000.0,2019-07-19,Chennai,4.2
+120,Tina Rogers,Finance,39.0,73000.0,2014-12-11,Delhi,4.8

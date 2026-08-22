@@ -1,0 +1,9 @@
+EmpID,Name,DeptID,Salary,DeptName,Location
+101,Alice,1,45000,HR,Delhi
+102,Bob,2,62000,IT,Bangalore
+103,Charlie,2,58000,IT,Bangalore
+104,David,3,75000,Finance,Mumbai
+105,Eva,1,47000,HR,Delhi
+106,Frank,2,68000,IT,Bangalore
+107,Grace,3,82000,Finance,Mumbai
+108,Helen,1,51000,HR,Delhi
