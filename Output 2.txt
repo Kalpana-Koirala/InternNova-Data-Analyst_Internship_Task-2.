@@ -1,0 +1,1109 @@
+######################################################################
+Task 1: NumPy Introduction & Arrays
+###################################################################### 
+
+One Dimensional Array:  [ 1  0  3  4  5  6  7  8  9 11]
+
+Two Dimensional Array:  [[ 1  0  3  4  5]
+ [ 6  7  8  9 11]]
+
+ Size of the array is:   10
+ Shape of the array is:   (10,)
+ Data type of the array is:   int64
+
+ Size of the array is:   10
+ Shape of the array is:   (2, 5)
+ Data type of the array is:   int64
+
+######################################################################
+Task 2: NumPy Indexing, Slicing & Reshaping
+###################################################################### 
+
+
+Element at index [5 & -2]:  24 25
+
+Slice [2:6] (elements from index 2 to 5): [95 73 93 24]
+Slice [::2] (every 2nd element): [31 95 93 35 25]
+
+Original One Dimensional Array:  [31 23 95 73 93 24 35 34 25 24]
+
+ Reshape of the array is:  
+ [[31 23]
+ [95 73]
+ [93 24]
+ [35 34]
+ [25 24]]
+
+ Shape of the another array is:   (2, 4)
+
+ Access specific rows and columns: 
+ Element at Row 0,1 & Coln 2: [ 23 500]
+
+ Access specific rows and columns: 
+ Sub-matrix (rows 0-1, columns 1-3 [[ 19  23]
+ [200 500]])
+
+Original Two Dimensional Array:  [[ 12  19  23  25]
+ [100 200 500 900]]
+
+ Reshape of the array is:  
+ [[ 12  19]
+ [ 23  25]
+ [100 200]
+ [500 900]]
+
+######################################################################
+Task 3:NumPy Mathematical & Statistical Operations
+###################################################################### 
+
+
+ Dataset:  a =  [15 22  8 34 19 27 11 45 30  5] , b =  [ 5 10  2  4  3  9  1  5  6  5]
+
+ Mathematical Operations:
+ 
+Addition:  [20 32 10 38 22 36 12 50 36 10]
+
+Subtraction:  [10 12  6 30 16 18 10 40 24  0]
+
+Multiplication:  [ 75 220  16 136  57 243  11 225 180  25]
+
+Division:  [ 3.          2.2         4.          8.5         6.33333333  3.
+ 11.          9.          5.          1.        ]
+
+STATISTICAL FUNCTIONS: 
+ 
+Mean:  21.6
+Median:  20.5
+Minimum:  5
+Maximum:  45
+Standard Deviation:  11.934822998268555
+Sum: 216
+
+######################################################################
+Task 4: Pandas Series & DataFrame
+###################################################################### 
+
+
+Panda Series:
+ 0    50
+1    90
+2    31
+3    23
+4    19
+5    12
+6    24
+7    25
+8     1
+dtype: int64
+
+Pandas Student DataFrame:
+   Student Name Roll No Dept Studying year
+0      Kalpana   20023   CS    Final year
+1          Raj   20024  EEE    Final year
+2         Aish   20020   BA      2nd year
+3        Priya   20021  BCA      1st year
+4         Loke   20022   ME    Final year
+
+ DataFrame Column Names:
+ Index(['Student Name', 'Roll No', 'Dept', 'Studying year'], dtype='str')
+
+ DataFrame Index:
+ RangeIndex(start=0, stop=5, step=1)
+
+Updated DataFrame:
+   Student Name Roll No Dept Studying year  Marks
+0      Kalpana   20023   CS    Final year     85
+1          Raj   20024  EEE    Final year     90
+2         Aish   20020   BA      2nd year     78
+3        Priya   20021  BCA      1st year     92
+4         Loke   20022   ME    Final year     88
+
+######################################################################
+Task 5: Reading & Inspecting Data
+###################################################################### 
+
+      Row ID        Order ID  Order Date   Ship Date  ...     Sales Quantity Discount    Profit
+0          1  CA-2016-152156  11-08-2016  11-11-2016  ...  261.9600        2     0.00   41.9136
+1          2  CA-2016-152156  11-08-2016  11-11-2016  ...  731.9400        3     0.00  219.5820
+2          3  CA-2016-138688  06-12-2016   6/16/2016  ...   14.6200        2     0.00    6.8714
+3          4  US-2015-108966  10-11-2015  10/18/2015  ...  957.5775        5     0.45 -383.0310
+4          5  US-2015-108966  10-11-2015  10/18/2015  ...   22.3680        2     0.20    2.5164
+...      ...             ...         ...         ...  ...       ...      ...      ...       ...
+9989    9990  CA-2014-110422   1/21/2014   1/23/2014  ...   25.2480        3     0.20    4.1028
+9990    9991  CA-2017-121258   2/26/2017  03-03-2017  ...   91.9600        2     0.00   15.6332
+9991    9992  CA-2017-121258   2/26/2017  03-03-2017  ...  258.5760        2     0.20   19.3932
+9992    9993  CA-2017-121258   2/26/2017  03-03-2017  ...   29.6000        4     0.00   13.3200
+9993    9994  CA-2017-119914  05-04-2017  05-09-2017  ...  243.1600        2     0.00   72.9480
+
+[9994 rows x 21 columns]
+
+The First Five Rows of the datasets: 
+    Row ID        Order ID  Order Date   Ship Date  ...     Sales Quantity Discount    Profit
+0       1  CA-2016-152156  11-08-2016  11-11-2016  ...  261.9600        2     0.00   41.9136
+1       2  CA-2016-152156  11-08-2016  11-11-2016  ...  731.9400        3     0.00  219.5820
+2       3  CA-2016-138688  06-12-2016   6/16/2016  ...   14.6200        2     0.00    6.8714
+3       4  US-2015-108966  10-11-2015  10/18/2015  ...  957.5775        5     0.45 -383.0310
+4       5  US-2015-108966  10-11-2015  10/18/2015  ...   22.3680        2     0.20    2.5164
+
+[5 rows x 21 columns]
+
+The Last Five Rows of the datasets: 
+       Row ID        Order ID  Order Date   Ship Date  ...    Sales Quantity Discount   Profit
+9989    9990  CA-2014-110422   1/21/2014   1/23/2014  ...   25.248        3      0.2   4.1028
+9990    9991  CA-2017-121258   2/26/2017  03-03-2017  ...   91.960        2      0.0  15.6332
+9991    9992  CA-2017-121258   2/26/2017  03-03-2017  ...  258.576        2      0.2  19.3932
+9992    9993  CA-2017-121258   2/26/2017  03-03-2017  ...   29.600        4      0.0  13.3200
+9993    9994  CA-2017-119914  05-04-2017  05-09-2017  ...  243.160        2      0.0  72.9480
+
+[5 rows x 21 columns]
+
+Number of rows & columns of the datasets: 
+ (9994, 21)
+
+Number of rows: 
+ 9994
+
+Number of columns: 
+ 21
+
+Columns of the datasets: 
+ Index(['Row ID', 'Order ID', 'Order Date', 'Ship Date', 'Ship Mode',
+       'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State',
+       'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category',
+       'Product Name', 'Sales', 'Quantity', 'Discount', 'Profit'],
+      dtype='str')
+
+Data types of the datasets: 
+ Row ID             int64
+Order ID             str
+Order Date           str
+Ship Date            str
+Ship Mode            str
+Customer ID          str
+Customer Name        str
+Segment              str
+Country              str
+City                 str
+State                str
+Postal Code        int64
+Region               str
+Product ID           str
+Category             str
+Sub-Category         str
+Product Name         str
+Sales            float64
+Quantity           int64
+Discount         float64
+Profit           float64
+dtype: object
+<class 'pandas.DataFrame'>
+RangeIndex: 9994 entries, 0 to 9993
+Data columns (total 21 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   Row ID         9994 non-null   int64  
+ 1   Order ID       9994 non-null   str    
+ 2   Order Date     9994 non-null   str    
+ 3   Ship Date      9994 non-null   str    
+ 4   Ship Mode      9994 non-null   str    
+ 5   Customer ID    9994 non-null   str    
+ 6   Customer Name  9994 non-null   str    
+ 7   Segment        9994 non-null   str    
+ 8   Country        9994 non-null   str    
+ 9   City           9994 non-null   str    
+ 10  State          9994 non-null   str    
+ 11  Postal Code    9994 non-null   int64  
+ 12  Region         9994 non-null   str    
+ 13  Product ID     9994 non-null   str    
+ 14  Category       9994 non-null   str    
+ 15  Sub-Category   9994 non-null   str    
+ 16  Product Name   9994 non-null   str    
+ 17  Sales          9994 non-null   float64
+ 18  Quantity       9994 non-null   int64  
+ 19  Discount       9994 non-null   float64
+ 20  Profit         9994 non-null   float64
+dtypes: float64(3), int64(3), str(15)
+memory usage: 1.6 MB
+
+Info of the datasets: 
+ None
+
+Statistical Summary of the datasets: 
+             Row ID   Postal Code         Sales     Quantity     Discount       Profit
+count  9994.000000   9994.000000   9994.000000  9994.000000  9994.000000  9994.000000
+mean   4997.500000  55190.379428    229.858001     3.789574     0.156203    28.656896
+std    2885.163629  32063.693350    623.245101     2.225110     0.206452   234.260108
+min       1.000000   1040.000000      0.444000     1.000000     0.000000 -6599.978000
+25%    2499.250000  23223.000000     17.280000     2.000000     0.000000     1.728750
+50%    4997.500000  56430.500000     54.490000     3.000000     0.200000     8.666500
+75%    7495.750000  90008.000000    209.940000     5.000000     0.200000    29.364000
+max    9994.000000  99301.000000  22638.480000    14.000000     0.800000  8399.976000
+
+######################################################################
+Task 6: Selecting, Filtering & Sorting Data 
+###################################################################### 
+
+Original Products DataFrame:
+       Row ID        Order ID  Order Date   Ship Date  ...     Sales Quantity Discount    Profit
+0          1  CA-2016-152156  11-08-2016  11-11-2016  ...  261.9600        2     0.00   41.9136
+1          2  CA-2016-152156  11-08-2016  11-11-2016  ...  731.9400        3     0.00  219.5820
+2          3  CA-2016-138688  06-12-2016   6/16/2016  ...   14.6200        2     0.00    6.8714
+3          4  US-2015-108966  10-11-2015  10/18/2015  ...  957.5775        5     0.45 -383.0310
+4          5  US-2015-108966  10-11-2015  10/18/2015  ...   22.3680        2     0.20    2.5164
+...      ...             ...         ...         ...  ...       ...      ...      ...       ...
+9989    9990  CA-2014-110422   1/21/2014   1/23/2014  ...   25.2480        3     0.20    4.1028
+9990    9991  CA-2017-121258   2/26/2017  03-03-2017  ...   91.9600        2     0.00   15.6332
+9991    9992  CA-2017-121258   2/26/2017  03-03-2017  ...  258.5760        2     0.20   19.3932
+9992    9993  CA-2017-121258   2/26/2017  03-03-2017  ...   29.6000        4     0.00   13.3200
+9993    9994  CA-2017-119914  05-04-2017  05-09-2017  ...  243.1600        2     0.00   72.9480
+
+[9994 rows x 21 columns]
+
+Selecting specific columns(Order Date) of the dataset:
+0       11-08-2016
+1       11-08-2016
+2       06-12-2016
+3       10-11-2015
+4       10-11-2015
+           ...    
+9989     1/21/2014
+9990     2/26/2017
+9991     2/26/2017
+9992     2/26/2017
+9993    05-04-2017
+Name: Order Date, Length: 9994, dtype: str
+
+Selecting specific columns(Customer Name) of the dataset:
+0            Claire Gute
+1            Claire Gute
+2        Darrin Van Huff
+3         Sean O'Donnell
+4         Sean O'Donnell
+              ...       
+9989    Tom Boeckenhauer
+9990         Dave Brooks
+9991         Dave Brooks
+9992         Dave Brooks
+9993        Chris Cortes
+Name: Customer Name, Length: 9994, dtype: str
+
+Selecting specific rows of the dataset:
+ Row ID                                                           6
+Order ID                                            CA-2014-115812
+Order Date                                              06-09-2014
+Ship Date                                                6/14/2014
+Ship Mode                                           Standard Class
+Customer ID                                               BH-11710
+Customer Name                                      Brosina Hoffman
+Segment                                                   Consumer
+Country                                              United States
+City                                                   Los Angeles
+State                                                   California
+Postal Code                                                  90032
+Region                                                        West
+Product ID                                         FUR-FU-10001487
+Category                                                 Furniture
+Sub-Category                                           Furnishings
+Product Name     Eldon Expressions Wood and Plastic Desk Access...
+Sales                                                        48.86
+Quantity                                                         7
+Discount                                                       0.0
+Profit                                                     14.1694
+Name: 5, dtype: object
+
+Quantity greater than 10:
+       Row ID        Order ID  Order Date   Ship Date  ...     Sales Quantity Discount    Profit
+113      114  CA-2014-115259   8/25/2014   8/27/2014  ...    40.096       14      0.2   14.5348
+139      140  CA-2016-145583  10/13/2016  10/19/2016  ...    43.120       14      0.0   20.6976
+147      148  CA-2016-114489  12-05-2016  12-09-2016  ...   384.450       11      0.0  103.8015
+251      252  CA-2016-145625  09-11-2016   9/17/2016  ...  3347.370       13      0.0  636.0003
+342      343  CA-2014-122336   4/13/2014   4/17/2014  ...    30.992       13      0.2   10.0724
+...      ...             ...         ...         ...  ...       ...      ...      ...       ...
+9732    9733  CA-2014-114321   8/20/2014   8/25/2014  ...   500.240       13      0.0  145.0696
+9882    9883  CA-2014-153927  08-12-2014   8/13/2014  ...   272.610       13      0.0   98.1396
+9895    9896  CA-2014-115049   9/26/2014  10-01-2014  ...   153.824       11      0.2   38.4560
+9941    9942  CA-2017-164028  11/24/2017  11/30/2017  ...   223.580       14      0.0   87.1962
+9979    9980  US-2016-103674  12-06-2016  12-10-2016  ...   437.472       14      0.2  153.1152
+
+[113 rows x 21 columns]
+
+Category == 'Technology' & Sales greater than 10000:
+       Row ID        Order ID  Order Date   Ship Date  ...      Sales Quantity Discount     Profit
+2623    2624  CA-2017-127180  10/22/2017  10/24/2017  ...  11199.968        4      0.2  3919.9888
+2697    2698  CA-2014-145317   3/18/2014   3/23/2014  ...  22638.480        6      0.5 -1811.0784
+4190    4191  CA-2017-166709  11/17/2017  11/22/2017  ...  10499.970        3      0.0  5039.9856
+6826    6827  CA-2016-118689  10-02-2016  10-09-2016  ...  17499.950        5      0.0  8399.9760
+8153    8154  CA-2017-140151   3/23/2017   3/25/2017  ...  13999.960        4      0.0  6719.9808
+
+[5 rows x 21 columns]
+
+Sub-Category == 'Phones' OR State == 'New York':
+       Row ID        Order ID  Order Date   Ship Date  ...     Sales Quantity Discount    Profit
+7          8  CA-2014-115812  06-09-2014   6/14/2014  ...   907.152        6      0.2   90.7152
+11        12  CA-2014-115812  06-09-2014   6/14/2014  ...   911.424        4      0.2   68.3568
+19        20  CA-2014-143336   8/27/2014  09-01-2014  ...   213.480        3      0.2   16.0110
+35        36  CA-2016-117590  12-08-2016  12-10-2016  ...  1097.544        7      0.2  123.4737
+40        41  CA-2015-117415  12/27/2015  12/31/2015  ...   371.168        4      0.2   41.7564
+...      ...             ...         ...         ...  ...       ...      ...      ...       ...
+9983    9984  US-2016-157728   9/22/2016   9/28/2016  ...    97.980        2      0.0   27.4344
+9984    9985  CA-2015-100251   5/17/2015   5/23/2015  ...    31.500       10      0.0   15.1200
+9985    9986  CA-2015-100251   5/17/2015   5/23/2015  ...    55.600        4      0.0   16.1240
+9988    9989  CA-2017-163629  11/17/2017  11/21/2017  ...   206.100        5      0.0   55.6470
+9991    9992  CA-2017-121258   2/26/2017  03-03-2017  ...   258.576        2      0.2   19.3932
+
+[1908 rows x 21 columns]
+
+Sort by Order Date Ascending:
+       Row ID        Order ID  Order Date   Ship Date  ...    Sales Quantity Discount    Profit
+4009    4010  CA-2017-144463  01-01-2017  01-05-2017  ...  474.430       11      0.0  199.2606
+6682    6683  CA-2017-154466  01-01-2017  01-02-2017  ...    3.600        2      0.0    1.7280
+8075    8076  CA-2017-151750  01-01-2017  01-05-2017  ...   15.224        2      0.8  -38.8212
+8074    8075  CA-2017-151750  01-01-2017  01-05-2017  ...   13.748       14      0.8  -22.6842
+8073    8074  CA-2017-151750  01-01-2017  01-05-2017  ...    6.470        5      0.8   -9.7050
+...      ...             ...         ...         ...  ...      ...      ...      ...       ...
+6693    6694  CA-2017-144225   9/30/2017  10-02-2017  ...  164.880        3      0.0   80.7912
+5265    5266  CA-2017-147452   9/30/2017  10-03-2017  ...   11.760        2      0.0    5.7624
+9687    9688  US-2017-130603   9/30/2017  10-06-2017  ...   11.646        9      0.8  -17.4690
+9214    9215  US-2017-120908   9/30/2017  10-02-2017  ...   20.664        7      0.2    6.9741
+9140    9141  CA-2017-123029   9/30/2017  10-02-2017  ...  159.980        2      0.0   47.9940
+
+[9994 rows x 21 columns]
+
+Sort by Order Date Descending: 
+       Row ID        Order ID  Order Date   Ship Date  ...    Sales Quantity Discount    Profit
+5267    5268  CA-2017-147452   9/30/2017  10-03-2017  ...    3.890        1      0.0    1.0114
+9140    9141  CA-2017-123029   9/30/2017  10-02-2017  ...  159.980        2      0.0   47.9940
+6693    6694  CA-2017-144225   9/30/2017  10-02-2017  ...  164.880        3      0.0   80.7912
+5266    5267  CA-2017-147452   9/30/2017  10-03-2017  ...  167.940        3      0.0   82.2906
+5265    5266  CA-2017-147452   9/30/2017  10-03-2017  ...   11.760        2      0.0    5.7624
+...      ...             ...         ...         ...  ...      ...      ...      ...       ...
+8072    8073  CA-2017-151750  01-01-2017  01-05-2017  ...   12.736        4      0.2    2.2288
+8071    8072  CA-2017-151750  01-01-2017  01-05-2017  ...  310.744        4      0.3  -26.6352
+8070    8071  CA-2017-151750  01-01-2017  01-05-2017  ...  141.420        5      0.6 -187.3815
+8069    8070  CA-2017-151750  01-01-2017  01-05-2017  ...  454.560        5      0.2 -107.9580
+848      849  CA-2017-107503  01-01-2017  01-06-2017  ...   48.896        4      0.2    8.5568
+
+[9994 rows x 21 columns]
+
+######################################################################
+Task 7: Handling Missing Values 
+###################################################################### 
+
+
+Original Dataset: 
+     EmpID           Name Department   Age   Salary JoiningDate       City  Rating
+0     101  Alice Johnson         HR  28.0  45000.0  2019-03-15      Delhi     4.2
+1     102      Bob Smith         IT  34.0  62000.0  2017-07-01     Mumbai     NaN
+2     103  Charlie Brown         IT   NaN  58000.0  2020-01-20  Bangalore     3.8
+3     104      David Lee    Finance  41.0      NaN  2015-11-05      Delhi     4.5
+4     105      Eva Green         HR  26.0  47000.0         NaN    Chennai     4.0
+5     106    Frank White         IT  38.0  68000.0  2016-09-12        NaN     3.9
+6     107      Grace Kim    Finance  45.0  82000.0  2014-02-28     Mumbai     4.7
+7     108    Helen Clark         HR  31.0  51000.0  2018-06-18  Bangalore     NaN
+8     109     Ian Wright         IT   NaN  71000.0  2013-04-09      Delhi     4.1
+9     110    Julia Davis    Finance  29.0      NaN  2021-08-23    Chennai     3.6
+10    111    Kevin Moore      Sales  33.0  49000.0  2019-12-01     Mumbai     4.3
+11    112     Laura Hall      Sales   NaN  53000.0  2020-05-14        NaN     3.7
+12    113    Mike Turner         IT  27.0      NaN  2022-01-10  Bangalore     4.0
+13    114     Nina Patel         HR  36.0  56000.0  2016-03-22      Delhi     NaN
+14    115     Oscar King      Sales  40.0  64000.0         NaN    Chennai     4.4
+15    116     Priya Nair    Finance   NaN  79000.0  2015-10-30     Mumbai     4.6
+16    117    Quinn Baker         IT  32.0      NaN  2018-09-17  Bangalore     3.5
+17    118   Rachel Adams      Sales  25.0  44000.0  2021-02-05      Delhi     NaN
+18    119     Sam Wilson         HR   NaN  50000.0  2019-07-19    Chennai     4.2
+19    120    Tina Rogers    Finance  39.0  73000.0  2014-12-11        NaN     4.8
+
+Misssing Values:
+ EmpID          False
+Name           False
+Department     False
+Age             True
+Salary          True
+JoiningDate     True
+City            True
+Rating          True
+dtype: bool
+
+Count of missing values per column:
+ EmpID          0
+Name           0
+Department     0
+Age            5
+Salary         4
+JoiningDate    2
+City           3
+Rating         4
+dtype: int64
+
+Total missing values in dataset:
+ 18
+
+     EmpID           Name Department   Age   Salary JoiningDate    City  Rating
+0     101  Alice Johnson         HR  28.0  45000.0  2019-03-15   Delhi     4.2
+6     107      Grace Kim    Finance  45.0  82000.0  2014-02-28  Mumbai     4.7
+10    111    Kevin Moore      Sales  33.0  49000.0  2019-12-01  Mumbai     4.3 
+Dataset AFTER removing rows with missing values (dropna):
+     EmpID           Name Department   Age   Salary JoiningDate       City  Rating
+0     101  Alice Johnson         HR  28.0  45000.0  2019-03-15      Delhi     4.2
+1     102      Bob Smith         IT  34.0  62000.0  2017-07-01     Mumbai     NaN
+2     103  Charlie Brown         IT   NaN  58000.0  2020-01-20  Bangalore     3.8
+3     104      David Lee    Finance  41.0      NaN  2015-11-05      Delhi     4.5
+4     105      Eva Green         HR  26.0  47000.0         NaN    Chennai     4.0
+5     106    Frank White         IT  38.0  68000.0  2016-09-12        NaN     3.9
+6     107      Grace Kim    Finance  45.0  82000.0  2014-02-28     Mumbai     4.7
+7     108    Helen Clark         HR  31.0  51000.0  2018-06-18  Bangalore     NaN
+8     109     Ian Wright         IT   NaN  71000.0  2013-04-09      Delhi     4.1
+9     110    Julia Davis    Finance  29.0      NaN  2021-08-23    Chennai     3.6
+10    111    Kevin Moore      Sales  33.0  49000.0  2019-12-01     Mumbai     4.3
+11    112     Laura Hall      Sales   NaN  53000.0  2020-05-14        NaN     3.7
+12    113    Mike Turner         IT  27.0      NaN  2022-01-10  Bangalore     4.0
+13    114     Nina Patel         HR  36.0  56000.0  2016-03-22      Delhi     NaN
+14    115     Oscar King      Sales  40.0  64000.0         NaN    Chennai     4.4
+15    116     Priya Nair    Finance   NaN  79000.0  2015-10-30     Mumbai     4.6
+16    117    Quinn Baker         IT  32.0      NaN  2018-09-17  Bangalore     3.5
+17    118   Rachel Adams      Sales  25.0  44000.0  2021-02-05      Delhi     NaN
+18    119     Sam Wilson         HR   NaN  50000.0  2019-07-19    Chennai     4.2
+19    120    Tina Rogers    Finance  39.0  73000.0  2014-12-11        NaN     4.8
+
+ Age value filling with using median:
+ 0     28.0
+1     34.0
+2     33.0
+3     41.0
+4     26.0
+5     38.0
+6     45.0
+7     31.0
+8     33.0
+9     29.0
+10    33.0
+11    33.0
+12    27.0
+13    36.0
+14    40.0
+15    33.0
+16    32.0
+17    25.0
+18    33.0
+19    39.0
+Name: Age, dtype: float64
+
+ Salary value filling with using median:
+ 0     45000.0
+1     62000.0
+2     58000.0
+3     59500.0
+4     47000.0
+5     68000.0
+6     82000.0
+7     51000.0
+8     71000.0
+9     59500.0
+10    49000.0
+11    53000.0
+12    59500.0
+13    56000.0
+14    64000.0
+15    79000.0
+16    59500.0
+17    44000.0
+18    50000.0
+19    73000.0
+Name: Salary, dtype: float64
+
+ Dates value filling with 0:
+ 0     2019-03-15
+1     2017-07-01
+2     2020-01-20
+3     2015-11-05
+4              0
+5     2016-09-12
+6     2014-02-28
+7     2018-06-18
+8     2013-04-09
+9     2021-08-23
+10    2019-12-01
+11    2020-05-14
+12    2022-01-10
+13    2016-03-22
+14             0
+15    2015-10-30
+16    2018-09-17
+17    2021-02-05
+18    2019-07-19
+19    2014-12-11
+Name: JoiningDate, dtype: object
+
+ City value filling with using mode:
+ 0         Delhi
+1        Mumbai
+2     Bangalore
+3         Delhi
+4       Chennai
+5         Delhi
+6        Mumbai
+7     Bangalore
+8         Delhi
+9       Chennai
+10       Mumbai
+11        Delhi
+12    Bangalore
+13        Delhi
+14      Chennai
+15       Mumbai
+16    Bangalore
+17        Delhi
+18      Chennai
+19        Delhi
+Name: City, dtype: str
+
+ Rating value filling with 0:
+ 0     4.200000
+1     4.533333
+2     3.800000
+3     4.500000
+4     4.000000
+5     3.900000
+6     4.700000
+7     3.766667
+8     4.100000
+9     3.600000
+10    4.300000
+11    3.700000
+12    4.000000
+13    4.200000
+14    4.400000
+15    4.600000
+16    3.500000
+17    4.200000
+18    4.200000
+19    4.800000
+Name: Rating, dtype: float64
+
+Dataset AFTER filling missing values:
+     EmpID           Name Department   Age   Salary JoiningDate       City    Rating
+0     101  Alice Johnson         HR  28.0  45000.0  2019-03-15      Delhi  4.200000
+1     102      Bob Smith         IT  34.0  62000.0  2017-07-01     Mumbai  4.533333
+2     103  Charlie Brown         IT  33.0  58000.0  2020-01-20  Bangalore  3.800000
+3     104      David Lee    Finance  41.0  59500.0  2015-11-05      Delhi  4.500000
+4     105      Eva Green         HR  26.0  47000.0           0    Chennai  4.000000
+5     106    Frank White         IT  38.0  68000.0  2016-09-12      Delhi  3.900000
+6     107      Grace Kim    Finance  45.0  82000.0  2014-02-28     Mumbai  4.700000
+7     108    Helen Clark         HR  31.0  51000.0  2018-06-18  Bangalore  3.766667
+8     109     Ian Wright         IT  33.0  71000.0  2013-04-09      Delhi  4.100000
+9     110    Julia Davis    Finance  29.0  59500.0  2021-08-23    Chennai  3.600000
+10    111    Kevin Moore      Sales  33.0  49000.0  2019-12-01     Mumbai  4.300000
+11    112     Laura Hall      Sales  33.0  53000.0  2020-05-14      Delhi  3.700000
+12    113    Mike Turner         IT  27.0  59500.0  2022-01-10  Bangalore  4.000000
+13    114     Nina Patel         HR  36.0  56000.0  2016-03-22      Delhi  4.200000
+14    115     Oscar King      Sales  40.0  64000.0           0    Chennai  4.400000
+15    116     Priya Nair    Finance  33.0  79000.0  2015-10-30     Mumbai  4.600000
+16    117    Quinn Baker         IT  32.0  59500.0  2018-09-17  Bangalore  3.500000
+17    118   Rachel Adams      Sales  25.0  44000.0  2021-02-05      Delhi  4.200000
+18    119     Sam Wilson         HR  33.0  50000.0  2019-07-19    Chennai  4.200000
+19    120    Tina Rogers    Finance  39.0  73000.0  2014-12-11      Delhi  4.800000
+
+ ######################################################################
+Task 8: Merge, Concatenate, GroupBy & Pivot Table 
+###################################################################### 
+
+Merging two DataFrames using a common column (DeptID):
+    EmpID     Name  DeptID  Salary DeptName   Location
+0    101    Alice       1   45000       HR      Delhi
+1    102      Bob       2   62000       IT  Bangalore
+2    103  Charlie       2   58000       IT  Bangalore
+3    104    David       3   75000  Finance     Mumbai
+4    105      Eva       1   47000       HR      Delhi
+5    106    Frank       2   68000       IT  Bangalore
+6    107    Grace       3   82000  Finance     Mumbai
+7    108    Helen       1   51000       HR      Delhi
+
+Concatenating two dataframe: Employees + New Employees:
+    EmpID     Name  DeptID  Salary
+0    101    Alice       1   45000
+1    102      Bob       2   62000
+2    103  Charlie       2   58000
+3    104    David       3   75000
+4    105      Eva       1   47000
+5    106    Frank       2   68000
+6    107    Grace       3   82000
+7    108    Helen       1   51000
+8    109      Ian       2   71000
+9    110    Julia       4   55000
+
+GROUPBY: Merged data grouped by 'Department':
+ <pandas.api.typing.DataFrameGroupBy object at 0x00000248C693CA50>
+
+Sum of Salary per Department:
+ DeptName
+Finance    157000
+HR         143000
+IT         188000
+Name: Salary, dtype: int64
+
+Mean Salary per Department:
+ DeptName
+Finance    78500.000000
+HR         47666.666667
+IT         62666.666667
+Name: Salary, dtype: float64
+
+Count of Employees per Department:
+ DeptName
+Finance    2
+HR         3
+IT         3
+Name: Name, dtype: int64
+
+Min and Max Salary per Department:
+             min    max
+DeptName              
+Finance   75000  82000
+HR        45000  51000
+IT        58000  68000
+
+Multiple aggregations at once:
+
+             sum          mean  count    min    max
+DeptName                                           
+Finance   157000  78500.000000      2  75000  82000
+HR        143000  47666.666667      3  45000  51000
+IT        188000  62666.666667      3  58000  68000
+
+PIVOT TABLE: Average Salary by Department and Location
+
+ Location     Bangalore         Delhi   Mumbai
+DeptName                                     
+Finance       0.000000      0.000000  78500.0
+HR            0.000000  47666.666667      0.0
+IT        62666.666667      0.000000      0.0
+
+PIVOT TABLE: Multiple aggregations (sum and count) Salary by Department
+
+              sum          mean  count
+          Salary        Salary Salary
+DeptName                             
+Finance   157000  78500.000000      2
+HR        143000  47666.666667      3
+IT        188000  62666.666667      3
+
+ ######################################################################
+Task 9: Exporting Data
+###################################################################### 
+
+
+Successfully Saved employees.csv
+
+merged_employees_departments.csv
+
+ ######################################################################
+Task 10: Mini Data Analysis Project
+###################################################################### 
+
+
+ ######################################################################
+1. LOADING THE DATASET
+###################################################################### 
+
+
+Student Performance Dataset:
+     StudentID            Name  Gender Class       City  Math  Science  English  Attendance
+0           1    Aarav Sharma    Male   10A      Delhi  78.0     82.0     75.0          92
+1           2     Priya Singh  Female   10A     Mumbai  88.0     91.0     85.0          95
+2           3     Rohan Verma    Male   10B      Delhi  65.0     70.0     60.0          78
+3           4     Sneha Patel  Female   10B  Bangalore  92.0     89.0     94.0          97
+4           5     Karan Mehta    Male   10A    Chennai  55.0      NaN     58.0          65
+5           6    Anjali Gupta  Female   10C     Mumbai  73.0     76.0     80.0          88
+6           7      Vikram Rao    Male   10B  Bangalore   NaN     68.0     62.0          72
+7           8      Neha Joshi  Female   10A      Delhi  81.0     85.0     79.0          90
+8           9      Arjun Nair    Male   10C    Chennai  45.0     50.0     48.0          60
+9          10      Divya Iyer  Female   10B     Mumbai  90.0     93.0      NaN          96
+10         11    Rahul Kapoor    Male   10A      Delhi  69.0     72.0     71.0          80
+11         12     Pooja Reddy  Female   10C  Bangalore   NaN     79.0     82.0          85
+12         13    Aditya Kumar    Male   10B    Chennai  58.0     61.0     55.0          68
+13         14   Meera Nambiar  Female   10A     Mumbai  95.0     97.0     96.0          99
+14         15      Sanjay Das    Male   10C      Delhi  62.0      NaN     59.0          74
+15         16     Kavya Menon  Female   10B  Bangalore  84.0     87.0     83.0          91
+16         17   Ishaan Chopra    Male   10A    Chennai  71.0     74.0     70.0          82
+17         18     Riya Bansal  Female   10C     Mumbai   NaN     88.0     90.0          93
+18         19   Manish Tiwari    Male   10B      Delhi  52.0     56.0     50.0          63
+19         20  Tanya Malhotra  Female   10A  Bangalore  89.0     90.0     88.0          94
+20         21    Yash Agarwal    Male   10C    Chennai  66.0     69.0     64.0          76
+21         22     Simran Kaur  Female   10B      Delhi  77.0     80.0      NaN          86
+22         23   Dev Choudhary    Male   10A     Mumbai  60.0     63.0     58.0          70
+23         24    Anika Sharma  Female   10C  Bangalore  93.0     95.0     91.0          98
+24         25    Nikhil Yadav    Male   10B    Chennai  48.0     52.0     45.0          58
+
+ ######################################################################
+2. DATA INSPECTION
+###################################################################### 
+
+
+Head of the first 5 rows:
+    StudentID          Name  Gender Class       City  Math  Science  English  Attendance
+0          1  Aarav Sharma    Male   10A      Delhi  78.0     82.0     75.0          92
+1          2   Priya Singh  Female   10A     Mumbai  88.0     91.0     85.0          95
+2          3   Rohan Verma    Male   10B      Delhi  65.0     70.0     60.0          78
+3          4   Sneha Patel  Female   10B  Bangalore  92.0     89.0     94.0          97
+4          5   Karan Mehta    Male   10A    Chennai  55.0      NaN     58.0          65
+
+Tail of the last 5 rows:
+     StudentID           Name  Gender Class       City  Math  Science  English  Attendance
+20         21   Yash Agarwal    Male   10C    Chennai  66.0     69.0     64.0          76
+21         22    Simran Kaur  Female   10B      Delhi  77.0     80.0      NaN          86
+22         23  Dev Choudhary    Male   10A     Mumbai  60.0     63.0     58.0          70
+23         24   Anika Sharma  Female   10C  Bangalore  93.0     95.0     91.0          98
+24         25   Nikhil Yadav    Male   10B    Chennai  48.0     52.0     45.0          58
+
+All columns in the datasets:
+ ['StudentID', 'Name', 'Gender', 'Class', 'City', 'Math', 'Science', 'English', 'Attendance']
+
+Statistical info in the datasets:
+         StudentID          Name Gender Class   City       Math    Science    English  Attendance
+count   25.000000            25     25    25     25  22.000000  23.000000  23.000000   25.000000
+unique        NaN            25      2     3      4        NaN        NaN        NaN         NaN
+top           NaN  Aarav Sharma   Male   10A  Delhi        NaN        NaN        NaN         NaN
+freq          NaN             1     13     9      7        NaN        NaN        NaN         NaN
+mean    13.000000           NaN    NaN   NaN    NaN  72.318182  76.826087  71.434783   82.000000
+std      7.359801           NaN    NaN   NaN    NaN  15.511551  13.959852  15.750400   12.871156
+min      1.000000           NaN    NaN   NaN    NaN  45.000000  50.000000  45.000000   58.000000
+25%      7.000000           NaN    NaN   NaN    NaN  60.500000  68.500000  58.500000   72.000000
+50%     13.000000           NaN    NaN   NaN    NaN  72.000000  79.000000  71.000000   85.000000
+75%     19.000000           NaN    NaN   NaN    NaN  87.000000  88.500000  84.000000   93.000000
+max     25.000000           NaN    NaN   NaN    NaN  95.000000  97.000000  96.000000   99.000000
+<class 'pandas.DataFrame'>
+RangeIndex: 25 entries, 0 to 24
+Data columns (total 9 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   StudentID   25 non-null     int64  
+ 1   Name        25 non-null     str    
+ 2   Gender      25 non-null     str    
+ 3   Class       25 non-null     str    
+ 4   City        25 non-null     str    
+ 5   Math        22 non-null     float64
+ 6   Science     23 non-null     float64
+ 7   English     23 non-null     float64
+ 8   Attendance  25 non-null     int64  
+dtypes: float64(3), int64(2), str(4)
+memory usage: 1.9 KB
+
+Information about the datasets:
+ None
+
+No.of.rows & columns in the datasets:
+ (25, 9)
+
+Datatypes of the column in the datasets:
+ StudentID       int64
+Name              str
+Gender            str
+Class             str
+City              str
+Math          float64
+Science       float64
+English       float64
+Attendance      int64
+dtype: object
+
+ ######################################################################
+ 3. IDENTIFYING AND HANDLING MISSING VALUES
+###################################################################### 
+
+
+Null values in the datasets:
+ StudentID     0
+Name          0
+Gender        0
+Class         0
+City          0
+Math          3
+Science       2
+English       2
+Attendance    0
+dtype: int64
+
+Null values in rows of the datasets:
+ 0     False
+1     False
+2     False
+3     False
+4      True
+5     False
+6      True
+7     False
+8     False
+9      True
+10    False
+11     True
+12    False
+13    False
+14     True
+15    False
+16    False
+17     True
+18    False
+19    False
+20    False
+21     True
+22    False
+23    False
+24    False
+dtype: bool
+
+Filled missing 'Math' values with median: 72.0
+
+Filled missing 'Science' values with median: 79.0
+
+Filled missing 'English' values with median: 71.0
+
+Missing values per column (after cleaning):
+ StudentID     0
+Name          0
+Gender        0
+Class         0
+City          0
+Math          0
+Science       0
+English       0
+Attendance    0
+dtype: int64
+
+ ######################################################################
+4. SELECTING AND FILTERING DATA
+###################################################################### 
+
+
+3rd row:
+ StudentID               3
+Name          Rohan Verma
+Gender               Male
+Class                 10B
+City                Delhi
+Math                 65.0
+Science              70.0
+English              60.0
+Attendance             78
+Name: 2, dtype: object
+
+1st column:
+ 0      1
+1      2
+2      3
+3      4
+4      5
+5      6
+6      7
+7      8
+8      9
+9     10
+10    11
+11    12
+12    13
+13    14
+14    15
+15    16
+16    17
+17    18
+18    19
+19    20
+20    21
+21    22
+22    23
+23    24
+24    25
+Name: StudentID, dtype: int64
+
+Students who scored >= 90 in Attendance:
+               Name Class  Attendance
+0     Aarav Sharma   10A          92
+1      Priya Singh   10A          95
+3      Sneha Patel   10B          97
+7       Neha Joshi   10A          90
+9       Divya Iyer   10B          96
+13   Meera Nambiar   10A          99
+15     Kavya Menon   10B          91
+17     Riya Bansal   10C          93
+19  Tanya Malhotra   10A          94
+23    Anika Sharma   10C          98
+
+Students who scored >= 90 in Science, Math, and English:
+              Name Class  Science  English  Math  Attendance
+13  Meera Nambiar   10A     97.0     96.0  95.0          99
+23   Anika Sharma   10C     95.0     91.0  93.0          98
+
+ ######################################################################
+5. SORTING DATA
+###################################################################### 
+
+              Name  Attendance
+13   Meera Nambiar          99
+23    Anika Sharma          98
+3      Sneha Patel          97
+9       Divya Iyer          96
+1      Priya Singh          95
+19  Tanya Malhotra          94
+17     Riya Bansal          93
+0     Aarav Sharma          92
+15     Kavya Menon          91
+7       Neha Joshi          90
+5     Anjali Gupta          88
+21     Simran Kaur          86
+11     Pooja Reddy          85
+16   Ishaan Chopra          82
+10    Rahul Kapoor          80
+2      Rohan Verma          78
+20    Yash Agarwal          76
+14      Sanjay Das          74
+6       Vikram Rao          72
+22   Dev Choudhary          70
+12    Aditya Kumar          68
+4      Karan Mehta          65
+18   Manish Tiwari          63
+8       Arjun Nair          60
+24    Nikhil Yadav          58
+
+ ######################################################################
+6. GROUPBY ANALYSIS
+###################################################################### 
+
+<pandas.api.typing.DataFrameGroupBy object at 0x00000248C9963E30>
+
+        Math  Science  English
+Class                        
+10A    76.0     81.0     76.0
+10B    71.0     73.0     66.0
+10C    69.0     77.0     73.0
+
+ Class
+10A    9
+10B    9
+10C    7
+Name: Name, dtype: int64
+
+        Math       Science       English      
+        min   max     min   max     min   max
+Class                                        
+10A    55.0  95.0    63.0  97.0    58.0  96.0
+10B    48.0  92.0    52.0  93.0    45.0  94.0
+10C    45.0  93.0    50.0  95.0    48.0  91.0
+
+ ######################################################################
+ 7. PIVOT TABLE
+###################################################################### 
+
+
+Pivot Table: Average of all subjects by City & Class:
+              English                   Math                     Science                 
+Class            10A        10B   10C   10A        10B   10C        10A        10B   10C
+City                                                                                    
+Bangalore  88.000000  79.666667  86.5  89.0  82.666667  82.5  90.000000  81.333333  87.0
+Chennai    64.000000  50.000000  56.0  63.0  53.000000  55.5  76.500000  56.500000  59.5
+Delhi      75.000000  60.333333  59.0  76.0  64.666667  62.0  79.666667  68.666667  79.0
+Mumbai     79.666667  71.000000  85.0  81.0  90.000000  72.5  83.666667  93.000000  82.0
+
+ ######################################################################
+8. INSIGHTS
+###################################################################### 
+
+Average of all three Subject 0     78.0
+1     88.0
+2     65.0
+3     92.0
+4     64.0
+5     76.0
+6     67.0
+7     82.0
+8     48.0
+9     85.0
+10    71.0
+11    78.0
+12    58.0
+13    96.0
+14    67.0
+15    85.0
+16    72.0
+17    83.0
+18    53.0
+19    89.0
+20    66.0
+21    76.0
+22    60.0
+23    93.0
+24    48.0
+Name: Average, dtype: float64
+
+ 1.Topest Student of the Class:
+ StudentID                14
+Name          Meera Nambiar
+Gender               Female
+Class                   10A
+City                 Mumbai
+Math                   95.0
+Science                97.0
+English                96.0
+Attendance               99
+Average                96.0
+Name: 13, dtype: object
+
+ 1.First 5 Topest Student of the Class:
+     StudentID            Name  Gender Class       City  Math  Science  English  Attendance  Average
+13         14   Meera Nambiar  Female   10A     Mumbai  95.0     97.0     96.0          99     96.0
+23         24    Anika Sharma  Female   10C  Bangalore  93.0     95.0     91.0          98     93.0
+3           4     Sneha Patel  Female   10B  Bangalore  92.0     89.0     94.0          97     92.0
+19         20  Tanya Malhotra  Female   10A  Bangalore  89.0     90.0     88.0          94     89.0
+1           2     Priya Singh  Female   10A     Mumbai  88.0     91.0     85.0          95     88.0
+
+ 2.Lowest Student of the Class:
+ StudentID              9
+Name          Arjun Nair
+Gender              Male
+Class                10C
+City             Chennai
+Math                45.0
+Science             50.0
+English             48.0
+Attendance            60
+Average             48.0
+Name: 8, dtype: object
+
+ 1.Last 5 Student of the Class:
+     StudentID           Name Gender Class     City  Math  Science  English  Attendance  Average
+8           9     Arjun Nair   Male   10C  Chennai  45.0     50.0     48.0          60     48.0
+24         25   Nikhil Yadav   Male   10B  Chennai  48.0     52.0     45.0          58     48.0
+18         19  Manish Tiwari   Male   10B    Delhi  52.0     56.0     50.0          63     53.0
+12         13   Aditya Kumar   Male   10B  Chennai  58.0     61.0     55.0          68     58.0
+22         23  Dev Choudhary   Male   10A   Mumbai  60.0     63.0     58.0          70     60.0
+
+ 3.Best Performing Class:
+ 10A
+
+ 4.Average Score by Gender:
+ Female
+
+ 5.Most Common Student City:
+ 0    Delhi
+Name: City, dtype: str
+
+ 6.Overall Class Average:
+ 73.6
+
+ 7.Correlation between Attendance and Average score: 0.97
+
+   -> Strong positive relationship: higher attendance tends to mean higher scores.
+
+ ######################################################################
+9. EXPORTING THE CLEANED / PROCESSED DATASET
+######################################################################
+
+Cleaned dataset exported to student_performance_cleaned.csv
+Verification - exported file shape: (25, 10)
+Verification - missing values remaining: 0
+
+Final cleaned dataset preview:
+   StudentID          Name  Gender Class       City  Math  Science  English  Attendance  Average
+0          1  Aarav Sharma    Male   10A      Delhi  78.0     82.0     75.0          92     78.0
+1          2   Priya Singh  Female   10A     Mumbai  88.0     91.0     85.0          95     88.0
+2          3   Rohan Verma    Male   10B      Delhi  65.0     70.0     60.0          78     65.0
+3          4   Sneha Patel  Female   10B  Bangalore  92.0     89.0     94.0          97     92.0
+4          5   Karan Mehta    Male   10A    Chennai  55.0     79.0     58.0          65     64.0
